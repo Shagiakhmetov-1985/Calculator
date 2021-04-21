@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		790414F6261EDDB6004F099A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790414F5261EDDB6004F099A /* AppDelegate.swift */; };
 		790414F8261EDDB6004F099A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790414F7261EDDB6004F099A /* SceneDelegate.swift */; };
-		790414FA261EDDB6004F099A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790414F9261EDDB6004F099A /* ViewController.swift */; };
+		790414FA261EDDB6004F099A /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790414F9261EDDB6004F099A /* CalculatorViewController.swift */; };
 		790414FD261EDDB6004F099A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790414FB261EDDB6004F099A /* Main.storyboard */; };
 		790414FF261EDDB7004F099A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 790414FE261EDDB7004F099A /* Assets.xcassets */; };
 		79041502261EDDB7004F099A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79041500261EDDB7004F099A /* LaunchScreen.storyboard */; };
+		7904150D261EDE2E004F099A /* Model for calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904150C261EDE2E004F099A /* Model for calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		790414F2261EDDB6004F099A /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		790414F5261EDDB6004F099A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		790414F7261EDDB6004F099A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		790414F9261EDDB6004F099A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		790414F9261EDDB6004F099A /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		790414FC261EDDB6004F099A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		790414FE261EDDB7004F099A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79041501261EDDB7004F099A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79041503261EDDB7004F099A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7904150C261EDE2E004F099A /* Model for calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model for calculator.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		790414F4261EDDB6004F099A /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				790414F5261EDDB6004F099A /* AppDelegate.swift */,
-				790414F7261EDDB6004F099A /* SceneDelegate.swift */,
-				790414F9261EDDB6004F099A /* ViewController.swift */,
-				790414FB261EDDB6004F099A /* Main.storyboard */,
-				790414FE261EDDB7004F099A /* Assets.xcassets */,
-				79041500261EDDB7004F099A /* LaunchScreen.storyboard */,
-				79041503261EDDB7004F099A /* Info.plist */,
+				7904150A261EDDF6004F099A /* View Controllers */,
+				79041510261EDE35004F099A /* Model */,
+				79041512261EDE5C004F099A /* Supporting */,
+				79041514261EDE71004F099A /* Storyboards */,
+				79041515261EDE8D004F099A /* Resources */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		7904150A261EDDF6004F099A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				790414F9261EDDB6004F099A /* CalculatorViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		79041510261EDE35004F099A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7904150C261EDE2E004F099A /* Model for calculator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79041512261EDE5C004F099A /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				790414F5261EDDB6004F099A /* AppDelegate.swift */,
+				790414F7261EDDB6004F099A /* SceneDelegate.swift */,
+				79041503261EDDB7004F099A /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		79041514261EDE71004F099A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				790414FB261EDDB6004F099A /* Main.storyboard */,
+				79041500261EDDB7004F099A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		79041515261EDE8D004F099A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				790414FE261EDDB7004F099A /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				790414FA261EDDB6004F099A /* ViewController.swift in Sources */,
+				790414FA261EDDB6004F099A /* CalculatorViewController.swift in Sources */,
 				790414F6261EDDB6004F099A /* AppDelegate.swift in Sources */,
 				790414F8261EDDB6004F099A /* SceneDelegate.swift in Sources */,
+				7904150D261EDE2E004F099A /* Model for calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_FILE = Calculator/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_FILE = Calculator/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
