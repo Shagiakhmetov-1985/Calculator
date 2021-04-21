@@ -109,7 +109,7 @@ class CalculatorViewController: UIViewController {
         case ".":
             enterLabel.text = enterLabel.text
         default:
-            <#code#>
+            break
         }
     }
     // MARK: - Result

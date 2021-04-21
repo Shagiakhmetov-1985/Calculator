@@ -27,19 +27,235 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.69992741222330035" green="1" blue="0.88906784874351108" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Ndo-We-kwb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7qX-Ag-bKL" secondAttribute="leading" constant="20" symbolic="YES" id="Ban-PJ-VQA"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="MA8-Vm-BX7"/>
-                                    <constraint firstAttribute="height" constant="24" id="UT8-v3-ly4"/>
-                                    <constraint firstItem="Ndo-We-kwb" firstAttribute="top" secondItem="7qX-Ag-bKL" secondAttribute="top" constant="4" id="Wcz-DK-h14"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ndo-We-kwb" secondAttribute="trailing" constant="2" id="fid-zO-kAD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ndo-We-kwb" secondAttribute="trailing" constant="2" id="Ift-FM-HoM"/>
+                                    <constraint firstItem="Ndo-We-kwb" firstAttribute="top" secondItem="7qX-Ag-bKL" secondAttribute="top" constant="4" id="JQL-CR-Zqk"/>
+                                    <constraint firstItem="Ndo-We-kwb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7qX-Ag-bKL" secondAttribute="leading" constant="226" id="R8S-rI-wbg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="RlJ-1k-GUe"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ndo-We-kwb" secondAttribute="bottom" constant="1.5" id="fxX-SJ-AI1"/>
+                                    <constraint firstAttribute="height" constant="24" id="zKx-kk-hnH"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZM-0J-jiA">
-                                <rect key="frame" x="25" y="476" width="130" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xzy-7L-0Z7">
+                                <rect key="frame" x="177" y="79" width="117.5" height="52"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51T-4X-GvT">
+                                <rect key="frame" x="25" y="253" width="60" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="JUN-yI-vR7"/>
-                                    <constraint firstAttribute="height" constant="50" id="SUQ-H8-2yR"/>
+                                    <constraint firstAttribute="width" secondItem="51T-4X-GvT" secondAttribute="height" multiplier="60:50" id="mqD-Vk-rX7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="AC">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b3q-06-xXf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCv-8R-DIs">
+                                <rect key="frame" x="95" y="253" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KCv-8R-DIs" secondAttribute="height" multiplier="60:50" id="MBE-ga-pD5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pT8-FG-NUO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0d-aq-ypS">
+                                <rect key="frame" x="165" y="253" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="x0d-aq-ypS" secondAttribute="height" multiplier="60:50" id="q3y-fH-nL8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="±">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ubm-Eb-0ff"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Uv-Uc-tYr">
+                                <rect key="frame" x="25" y="313" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Uv-Uc-tYr" secondAttribute="height" multiplier="60:50" id="py8-Dq-KR8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qb3-QK-GEn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QH-jB-3nc">
+                                <rect key="frame" x="95" y="313" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7QH-jB-3nc" secondAttribute="height" multiplier="60:50" id="bhX-E8-XiN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fn6-oK-XQY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbU-jQ-v4j">
+                                <rect key="frame" x="165" y="313" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sbU-jQ-v4j" secondAttribute="height" multiplier="60:50" id="hAY-x4-jbn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ie0-xS-2G0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v63-c5-tAg">
+                                <rect key="frame" x="235" y="313" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="v63-c5-tAg" secondAttribute="height" multiplier="60:50" id="vrK-8C-LVP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="×">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vqa-4N-T8n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5e-tn-7Op">
+                                <rect key="frame" x="25" y="373" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="s5e-tn-7Op" secondAttribute="height" multiplier="60:50" id="zeJ-Nt-6VF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m4A-i5-Ypz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXS-zE-KCy">
+                                <rect key="frame" x="95" y="373" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YXS-zE-KCy" secondAttribute="height" multiplier="60:50" id="q92-1A-R4k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="23c-Ki-jvj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vu-TS-TRy">
+                                <rect key="frame" x="165" y="373" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2Vu-TS-TRy" secondAttribute="height" multiplier="60:50" id="oQp-hB-40d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MdK-T2-w0o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fs-bU-sjH">
+                                <rect key="frame" x="235" y="373" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3Fs-bU-sjH" secondAttribute="height" multiplier="60:50" id="5c7-tS-Bge"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="−">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OlX-cU-UmM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yk-10-ayb">
+                                <rect key="frame" x="25" y="433" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3Yk-10-ayb" secondAttribute="height" multiplier="60:50" id="hyD-6y-Xtz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mpc-OG-9k6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnf-Ce-sbJ">
+                                <rect key="frame" x="95" y="433" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qnf-Ce-sbJ" secondAttribute="height" multiplier="60:50" id="vtN-BJ-K9d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IqR-1S-fNY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCr-ip-VfK">
+                                <rect key="frame" x="165" y="433" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SCr-ip-VfK" secondAttribute="height" multiplier="60:50" id="4jH-kM-Nll"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YJK-cp-sIi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLN-Ul-mnH">
+                                <rect key="frame" x="235" y="433" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hLN-Ul-mnH" secondAttribute="height" multiplier="60:50" id="ZYC-v2-0dt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bgg-fd-onK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZM-0J-jiA">
+                                <rect key="frame" x="25" y="493" width="130" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NZM-0J-jiA" secondAttribute="height" multiplier="130:50" id="1gC-7L-60F"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
                                 <state key="normal" title="0">
@@ -49,360 +265,145 @@
                                     <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iha-DQ-T3f"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="atl-0I-sUR">
-                                <rect key="frame" x="25" y="233" width="270" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51T-4X-GvT">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="uEi-an-WRv"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="uZx-lU-xIA"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="AC">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b3q-06-xXf"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCv-8R-DIs">
-                                        <rect key="frame" x="70" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="aUv-uX-J9h"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="p12-Q0-Om5"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="C">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pT8-FG-NUO"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0d-aq-ypS">
-                                        <rect key="frame" x="140" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="MOo-f0-ubz"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="zal-2Y-rxp"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="±">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ubm-Eb-0ff"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2f-ZA-yuv">
-                                        <rect key="frame" x="210" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="BGj-vI-FXD"/>
-                                            <constraint firstAttribute="height" constant="50" id="l4E-1X-h8S"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="÷">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pVL-J1-Z7U"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gQM-LE-NoU">
-                                <rect key="frame" x="25" y="291" width="270" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Uv-Uc-tYr">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="MrU-KM-OXc"/>
-                                            <constraint firstAttribute="height" constant="50" id="OcZ-Fs-jnV"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="7">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qb3-QK-GEn"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QH-jB-3nc">
-                                        <rect key="frame" x="70" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="HM7-qJ-Whv"/>
-                                            <constraint firstAttribute="height" constant="50" id="Ukn-TE-z0V"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="8">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fn6-oK-XQY"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbU-jQ-v4j">
-                                        <rect key="frame" x="140" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="AIA-jj-AQc"/>
-                                            <constraint firstAttribute="height" constant="50" id="rke-1t-3Fs"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="9">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ie0-xS-2G0"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v63-c5-tAg">
-                                        <rect key="frame" x="210" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="2lx-MZ-i0d"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="aBT-jn-5T9"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="×">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vqa-4N-T8n"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sOV-fY-CeB">
-                                <rect key="frame" x="25" y="351" width="270" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5e-tn-7Op">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="3tJ-wK-BOP"/>
-                                            <constraint firstAttribute="height" constant="50" id="6Qb-H6-lno"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="4">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m4A-i5-Ypz"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXS-zE-KCy">
-                                        <rect key="frame" x="70" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="hJK-EJ-aAh"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="hn4-XI-xp8"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="5">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="23c-Ki-jvj"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vu-TS-TRy">
-                                        <rect key="frame" x="140" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="E2G-sc-JuY"/>
-                                            <constraint firstAttribute="height" constant="50" id="Kgd-y7-z6e"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="6">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MdK-T2-w0o"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fs-bU-sjH">
-                                        <rect key="frame" x="210" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="5be-M0-47g"/>
-                                            <constraint firstAttribute="height" constant="50" id="eT6-1i-H1A"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="−">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OlX-cU-UmM"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hJl-9n-tMo">
-                                <rect key="frame" x="165" y="476" width="130" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlg-si-eCe">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Plo-Yb-WAq"/>
-                                            <constraint firstAttribute="height" constant="50" id="bA8-5o-8Sa"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title=".">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qDz-jS-yzU"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fry-Ms-tdG">
-                                        <rect key="frame" x="70" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="dtc-bt-Pmd"/>
-                                            <constraint firstAttribute="height" constant="50" id="f16-NA-0Mb"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="=">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8bC-gD-n0a"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OT5-QJ-lP7">
-                                <rect key="frame" x="25" y="414" width="270" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yk-10-ayb">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Dr9-Is-3dx"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="lN7-oo-fmr"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="1">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mpc-OG-9k6"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnf-Ce-sbJ">
-                                        <rect key="frame" x="70" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Aey-ra-8VI"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="b3F-S0-o9d"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="2">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IqR-1S-fNY"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCr-ip-VfK">
-                                        <rect key="frame" x="140" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Mlk-b4-B10"/>
-                                            <constraint firstAttribute="height" constant="50" id="xX5-SF-kT8"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="3">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YJK-cp-sIi"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLN-Ul-mnH">
-                                        <rect key="frame" x="210" y="0.0" width="60" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="deJ-iq-Sms"/>
-                                            <constraint firstAttribute="height" constant="50" id="u1d-Di-kLc"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                        <state key="normal" title="+">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bgg-fd-onK"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xzy-7L-0Z7">
-                                <rect key="frame" x="195.5" y="69" width="99" height="44"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="38"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlg-si-eCe">
+                                <rect key="frame" x="165" y="493" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qlg-si-eCe" secondAttribute="height" multiplier="60:50" id="aRR-BK-t6i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title=".">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qDz-jS-yzU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fry-Ms-tdG">
+                                <rect key="frame" x="235" y="493" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fry-Ms-tdG" secondAttribute="height" multiplier="60:50" id="Bzt-uA-1W1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8bC-gD-n0a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2f-ZA-yuv">
+                                <rect key="frame" x="235" y="253" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="w2f-ZA-yuv" secondAttribute="height" multiplier="60:50" id="2YF-CH-meS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <state key="normal" title="÷">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pVL-J1-Z7U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.21946107081758059" green="0.48721010401704246" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7qX-Ag-bKL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="2qJ-pB-snz"/>
-                            <constraint firstItem="hJl-9n-tMo" firstAttribute="leading" secondItem="NZM-0J-jiA" secondAttribute="trailing" constant="10" id="6V1-qt-Gh1"/>
-                            <constraint firstItem="sOV-fY-CeB" firstAttribute="top" secondItem="gQM-LE-NoU" secondAttribute="bottom" constant="10" id="9yB-QH-1fD"/>
-                            <constraint firstItem="sOV-fY-CeB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Aks-kt-K1s"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OT5-QJ-lP7" secondAttribute="trailing" constant="25" id="Hgy-ax-1G8"/>
-                            <constraint firstAttribute="trailing" secondItem="Xzy-7L-0Z7" secondAttribute="trailing" constant="25.5" id="Jzg-WM-tfg"/>
-                            <constraint firstItem="NZM-0J-jiA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="MOK-1M-MQZ"/>
-                            <constraint firstItem="atl-0I-sUR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Nvt-54-syO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hJl-9n-tMo" secondAttribute="trailing" constant="25" id="Pl6-eq-rTw"/>
-                            <constraint firstItem="OT5-QJ-lP7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Qp4-js-L5K"/>
-                            <constraint firstItem="7qX-Ag-bKL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Uxu-cB-dut"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7qX-Ag-bKL" secondAttribute="trailing" constant="25" id="VPy-oF-NzR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="atl-0I-sUR" secondAttribute="trailing" constant="25" id="WAB-sw-Iuv"/>
-                            <constraint firstItem="Xzy-7L-0Z7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="WIV-pP-SYK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hJl-9n-tMo" secondAttribute="bottom" constant="42" id="Zxz-wv-oE1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gQM-LE-NoU" secondAttribute="trailing" constant="25" id="amd-s6-Sym"/>
-                            <constraint firstItem="NZM-0J-jiA" firstAttribute="top" secondItem="OT5-QJ-lP7" secondAttribute="bottom" constant="12" id="bhY-tv-klr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sOV-fY-CeB" secondAttribute="trailing" constant="25" id="bp6-gX-IR5"/>
-                            <constraint firstItem="Xzy-7L-0Z7" firstAttribute="top" secondItem="7qX-Ag-bKL" secondAttribute="bottom" constant="25" id="elm-Ux-gTv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NZM-0J-jiA" secondAttribute="bottom" constant="42" id="ihG-An-uNk"/>
-                            <constraint firstItem="gQM-LE-NoU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="nzG-Fm-YzU"/>
-                            <constraint firstItem="OT5-QJ-lP7" firstAttribute="top" secondItem="sOV-fY-CeB" secondAttribute="bottom" constant="13" id="wVr-9I-hVC"/>
-                            <constraint firstItem="gQM-LE-NoU" firstAttribute="top" secondItem="atl-0I-sUR" secondAttribute="bottom" constant="8" symbolic="YES" id="xou-7v-All"/>
-                            <constraint firstItem="hJl-9n-tMo" firstAttribute="top" secondItem="OT5-QJ-lP7" secondAttribute="bottom" constant="12" id="yla-Gl-9ga"/>
+                            <constraint firstItem="NZM-0J-jiA" firstAttribute="top" secondItem="qnf-Ce-sbJ" secondAttribute="bottom" constant="10" id="1Ml-a7-SLl"/>
+                            <constraint firstItem="3Yk-10-ayb" firstAttribute="top" secondItem="s5e-tn-7Op" secondAttribute="bottom" constant="10" id="1pX-QJ-gXW"/>
+                            <constraint firstItem="51T-4X-GvT" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="2d2-3Z-foI"/>
+                            <constraint firstItem="3Fs-bU-sjH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="2oH-NI-VEv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v63-c5-tAg" secondAttribute="trailing" constant="25" id="3Dd-rH-xTa"/>
+                            <constraint firstItem="4Uv-Uc-tYr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="3IB-SJ-zFi"/>
+                            <constraint firstItem="YXS-zE-KCy" firstAttribute="top" secondItem="7QH-jB-3nc" secondAttribute="bottom" constant="10" id="3hb-fw-WVQ"/>
+                            <constraint firstItem="SCr-ip-VfK" firstAttribute="top" secondItem="2Vu-TS-TRy" secondAttribute="bottom" constant="10" id="518-JM-czX"/>
+                            <constraint firstItem="fry-Ms-tdG" firstAttribute="leading" secondItem="qlg-si-eCe" secondAttribute="trailing" constant="10" id="5Ce-pG-A76"/>
+                            <constraint firstItem="4Uv-Uc-tYr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="5NM-Zd-p44"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hLN-Ul-mnH" secondAttribute="trailing" constant="25" id="6Ox-6X-Zv0"/>
+                            <constraint firstItem="3Fs-bU-sjH" firstAttribute="leading" secondItem="2Vu-TS-TRy" secondAttribute="trailing" constant="10" id="AB0-r0-qEO"/>
+                            <constraint firstItem="qnf-Ce-sbJ" firstAttribute="leading" secondItem="3Yk-10-ayb" secondAttribute="trailing" constant="10" id="CDS-a9-6ZS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NZM-0J-jiA" secondAttribute="bottom" constant="25" id="DxP-T6-V3I"/>
+                            <constraint firstItem="hLN-Ul-mnH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="Ef6-cF-lU4"/>
+                            <constraint firstItem="w2f-ZA-yuv" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="FLh-k5-Dad"/>
+                            <constraint firstItem="NZM-0J-jiA" firstAttribute="top" secondItem="3Yk-10-ayb" secondAttribute="bottom" constant="10" id="GRw-d5-f1C"/>
+                            <constraint firstItem="YXS-zE-KCy" firstAttribute="leading" secondItem="s5e-tn-7Op" secondAttribute="trailing" constant="10" id="HB9-Tj-ktH"/>
+                            <constraint firstItem="v63-c5-tAg" firstAttribute="top" secondItem="w2f-ZA-yuv" secondAttribute="bottom" constant="10" id="HX2-96-eR0"/>
+                            <constraint firstItem="sbU-jQ-v4j" firstAttribute="top" secondItem="x0d-aq-ypS" secondAttribute="bottom" constant="10" id="Hhh-k5-IBx"/>
+                            <constraint firstItem="SCr-ip-VfK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="IPg-IH-0ba"/>
+                            <constraint firstItem="2Vu-TS-TRy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="Idk-m1-kfK"/>
+                            <constraint firstItem="qlg-si-eCe" firstAttribute="top" secondItem="SCr-ip-VfK" secondAttribute="bottom" constant="10" id="IeD-Cp-dVY"/>
+                            <constraint firstItem="qnf-Ce-sbJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="M9s-K1-vNd"/>
+                            <constraint firstItem="qlg-si-eCe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="Mwn-rc-g9J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fry-Ms-tdG" secondAttribute="bottom" constant="25" id="ORR-lx-NbS"/>
+                            <constraint firstItem="v63-c5-tAg" firstAttribute="leading" secondItem="sbU-jQ-v4j" secondAttribute="trailing" constant="10" id="Ouk-3r-7uT"/>
+                            <constraint firstItem="w2f-ZA-yuv" firstAttribute="leading" secondItem="x0d-aq-ypS" secondAttribute="trailing" constant="10" id="PQv-sg-QFe"/>
+                            <constraint firstItem="qlg-si-eCe" firstAttribute="leading" secondItem="NZM-0J-jiA" secondAttribute="trailing" constant="10" id="QHE-mC-Qg4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fry-Ms-tdG" secondAttribute="trailing" constant="25" id="RoY-lV-i1j"/>
+                            <constraint firstItem="7QH-jB-3nc" firstAttribute="top" secondItem="KCv-8R-DIs" secondAttribute="bottom" constant="10" id="SK3-wi-IPv"/>
+                            <constraint firstItem="NZM-0J-jiA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="TxA-e7-98V"/>
+                            <constraint firstItem="4Uv-Uc-tYr" firstAttribute="top" secondItem="51T-4X-GvT" secondAttribute="bottom" constant="10" id="UlI-He-jpD"/>
+                            <constraint firstItem="YXS-zE-KCy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="Vge-st-sOq"/>
+                            <constraint firstItem="NZM-0J-jiA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="65:284" id="WnV-kM-bRp"/>
+                            <constraint firstItem="7qX-Ag-bKL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="WtD-9x-0fM"/>
+                            <constraint firstItem="hLN-Ul-mnH" firstAttribute="leading" secondItem="SCr-ip-VfK" secondAttribute="trailing" constant="10" id="XWg-j0-H90"/>
+                            <constraint firstItem="Xzy-7L-0Z7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="165" id="Xb8-tk-47g"/>
+                            <constraint firstItem="v63-c5-tAg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="Xon-Za-aSo"/>
+                            <constraint firstItem="7qX-Ag-bKL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Xul-kL-Xvr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Fs-bU-sjH" secondAttribute="trailing" constant="25" id="a7w-8i-3Lv"/>
+                            <constraint firstItem="x0d-aq-ypS" firstAttribute="leading" secondItem="KCv-8R-DIs" secondAttribute="trailing" constant="10" id="azQ-Mb-EVE"/>
+                            <constraint firstItem="3Yk-10-ayb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="b1b-cV-3c6"/>
+                            <constraint firstItem="fry-Ms-tdG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="bBz-ca-G8w"/>
+                            <constraint firstItem="fry-Ms-tdG" firstAttribute="top" secondItem="hLN-Ul-mnH" secondAttribute="bottom" constant="10" id="bRJ-sd-5Be"/>
+                            <constraint firstItem="s5e-tn-7Op" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="eG6-bt-vC9"/>
+                            <constraint firstItem="3Fs-bU-sjH" firstAttribute="top" secondItem="v63-c5-tAg" secondAttribute="bottom" constant="10" id="fEH-0M-mVT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qlg-si-eCe" secondAttribute="bottom" constant="25" id="fcy-zg-jC5"/>
+                            <constraint firstItem="2Vu-TS-TRy" firstAttribute="top" secondItem="sbU-jQ-v4j" secondAttribute="bottom" constant="10" id="gQg-cD-JSJ"/>
+                            <constraint firstItem="KCv-8R-DIs" firstAttribute="leading" secondItem="51T-4X-GvT" secondAttribute="trailing" constant="10" id="i3E-E0-0xa"/>
+                            <constraint firstItem="KCv-8R-DIs" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="i6k-q3-mZA"/>
+                            <constraint firstItem="2Vu-TS-TRy" firstAttribute="leading" secondItem="YXS-zE-KCy" secondAttribute="trailing" constant="10" id="iAY-fG-gOc"/>
+                            <constraint firstItem="x0d-aq-ypS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="kYt-rm-gJP"/>
+                            <constraint firstItem="s5e-tn-7Op" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="kkg-16-p3e"/>
+                            <constraint firstItem="qnf-Ce-sbJ" firstAttribute="top" secondItem="YXS-zE-KCy" secondAttribute="bottom" constant="10" id="mNr-8v-hLZ"/>
+                            <constraint firstItem="51T-4X-GvT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="ngp-wB-BNi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7qX-Ag-bKL" secondAttribute="trailing" constant="25" id="ont-Wi-SiI"/>
+                            <constraint firstItem="7QH-jB-3nc" firstAttribute="leading" secondItem="4Uv-Uc-tYr" secondAttribute="trailing" constant="10" id="pCk-3N-bG6"/>
+                            <constraint firstItem="Xzy-7L-0Z7" firstAttribute="top" secondItem="7qX-Ag-bKL" secondAttribute="bottom" constant="35" id="pYW-g5-V6n"/>
+                            <constraint firstItem="sbU-jQ-v4j" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="pkB-Pl-Vbh"/>
+                            <constraint firstItem="7QH-jB-3nc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:142" id="qeF-Je-qUa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w2f-ZA-yuv" secondAttribute="trailing" constant="25" id="qgQ-tW-SLo"/>
+                            <constraint firstItem="hLN-Ul-mnH" firstAttribute="top" secondItem="3Fs-bU-sjH" secondAttribute="bottom" constant="10" id="vdn-bN-7oH"/>
+                            <constraint firstItem="sbU-jQ-v4j" firstAttribute="leading" secondItem="7QH-jB-3nc" secondAttribute="trailing" constant="10" id="wTn-Ch-Br4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xzy-7L-0Z7" secondAttribute="trailing" constant="25.5" id="wXR-Ln-40H"/>
+                            <constraint firstItem="3Yk-10-ayb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="xJL-Tu-snk"/>
+                            <constraint firstItem="SCr-ip-VfK" firstAttribute="leading" secondItem="qnf-Ce-sbJ" secondAttribute="trailing" constant="10" id="xpO-Ys-Z0A"/>
+                            <constraint firstItem="s5e-tn-7Op" firstAttribute="top" secondItem="4Uv-Uc-tYr" secondAttribute="bottom" constant="10" id="ziH-Xv-P2E"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="enterLabel" destination="Ndo-We-kwb" id="LTb-kk-lua"/>
                         <outlet property="enterView" destination="7qX-Ag-bKL" id="EOo-dj-ARw"/>
                         <outlet property="resultLabel" destination="Xzy-7L-0Z7" id="SKY-St-TDD"/>
-                        <outletCollection property="keyboardButtons" destination="NZM-0J-jiA" collectionClass="NSMutableArray" id="wfF-gJ-12z"/>
-                        <outletCollection property="keyboardButtons" destination="qlg-si-eCe" collectionClass="NSMutableArray" id="ZIv-OU-axv"/>
-                        <outletCollection property="keyboardButtons" destination="fry-Ms-tdG" collectionClass="NSMutableArray" id="K0c-sK-M3I"/>
-                        <outletCollection property="keyboardButtons" destination="3Yk-10-ayb" collectionClass="NSMutableArray" id="5Qe-1k-lx5"/>
-                        <outletCollection property="keyboardButtons" destination="qnf-Ce-sbJ" collectionClass="NSMutableArray" id="A75-QU-Urs"/>
-                        <outletCollection property="keyboardButtons" destination="SCr-ip-VfK" collectionClass="NSMutableArray" id="mfG-ya-tCH"/>
-                        <outletCollection property="keyboardButtons" destination="hLN-Ul-mnH" collectionClass="NSMutableArray" id="wVO-01-N3E"/>
-                        <outletCollection property="keyboardButtons" destination="s5e-tn-7Op" collectionClass="NSMutableArray" id="btP-aK-rQx"/>
-                        <outletCollection property="keyboardButtons" destination="YXS-zE-KCy" collectionClass="NSMutableArray" id="LCz-vD-jLo"/>
-                        <outletCollection property="keyboardButtons" destination="2Vu-TS-TRy" collectionClass="NSMutableArray" id="t0U-C9-F6W"/>
-                        <outletCollection property="keyboardButtons" destination="3Fs-bU-sjH" collectionClass="NSMutableArray" id="uoI-nn-AcQ"/>
-                        <outletCollection property="keyboardButtons" destination="4Uv-Uc-tYr" collectionClass="NSMutableArray" id="Mk9-bh-vc4"/>
-                        <outletCollection property="keyboardButtons" destination="7QH-jB-3nc" collectionClass="NSMutableArray" id="ZEQ-bm-bIa"/>
-                        <outletCollection property="keyboardButtons" destination="sbU-jQ-v4j" collectionClass="NSMutableArray" id="8ju-m7-IZj"/>
-                        <outletCollection property="keyboardButtons" destination="v63-c5-tAg" collectionClass="NSMutableArray" id="OaF-Sq-yjR"/>
                         <outletCollection property="keyboardButtons" destination="51T-4X-GvT" collectionClass="NSMutableArray" id="gAi-rF-kxa"/>
                         <outletCollection property="keyboardButtons" destination="KCv-8R-DIs" collectionClass="NSMutableArray" id="9me-ZS-yPC"/>
                         <outletCollection property="keyboardButtons" destination="x0d-aq-ypS" collectionClass="NSMutableArray" id="owS-Rc-T2Q"/>
                         <outletCollection property="keyboardButtons" destination="w2f-ZA-yuv" collectionClass="NSMutableArray" id="bJw-LG-4G3"/>
+                        <outletCollection property="keyboardButtons" destination="4Uv-Uc-tYr" collectionClass="NSMutableArray" id="Mk9-bh-vc4"/>
+                        <outletCollection property="keyboardButtons" destination="7QH-jB-3nc" collectionClass="NSMutableArray" id="ZEQ-bm-bIa"/>
+                        <outletCollection property="keyboardButtons" destination="sbU-jQ-v4j" collectionClass="NSMutableArray" id="8ju-m7-IZj"/>
+                        <outletCollection property="keyboardButtons" destination="v63-c5-tAg" collectionClass="NSMutableArray" id="OaF-Sq-yjR"/>
+                        <outletCollection property="keyboardButtons" destination="s5e-tn-7Op" collectionClass="NSMutableArray" id="btP-aK-rQx"/>
+                        <outletCollection property="keyboardButtons" destination="YXS-zE-KCy" collectionClass="NSMutableArray" id="LCz-vD-jLo"/>
+                        <outletCollection property="keyboardButtons" destination="2Vu-TS-TRy" collectionClass="NSMutableArray" id="t0U-C9-F6W"/>
+                        <outletCollection property="keyboardButtons" destination="3Fs-bU-sjH" collectionClass="NSMutableArray" id="uoI-nn-AcQ"/>
+                        <outletCollection property="keyboardButtons" destination="3Yk-10-ayb" collectionClass="NSMutableArray" id="5Qe-1k-lx5"/>
+                        <outletCollection property="keyboardButtons" destination="qnf-Ce-sbJ" collectionClass="NSMutableArray" id="A75-QU-Urs"/>
+                        <outletCollection property="keyboardButtons" destination="SCr-ip-VfK" collectionClass="NSMutableArray" id="mfG-ya-tCH"/>
+                        <outletCollection property="keyboardButtons" destination="hLN-Ul-mnH" collectionClass="NSMutableArray" id="wVO-01-N3E"/>
+                        <outletCollection property="keyboardButtons" destination="NZM-0J-jiA" collectionClass="NSMutableArray" id="wfF-gJ-12z"/>
+                        <outletCollection property="keyboardButtons" destination="qlg-si-eCe" collectionClass="NSMutableArray" id="ZIv-OU-axv"/>
+                        <outletCollection property="keyboardButtons" destination="fry-Ms-tdG" collectionClass="NSMutableArray" id="K0c-sK-M3I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
